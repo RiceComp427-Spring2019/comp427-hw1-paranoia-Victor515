@@ -38,18 +38,18 @@ please cut-and-paste the text from that email here._
   - The third way of "attack" is hard to prevent using any technical measures. But we could set up rules that those who abuse their power will be fined heavily and fired. In this way, we set up a negative incentive for people to not use this kind of "attack".
 
 ## Problem 2
-- Scenario: {Stadium|TSA|Documents|Grading|G20}
+- Scenario: Documents
 - Assumptions:
-  - explain_your_assumptions
+  - I assume that this document management system is not intended for everyday use, which means it only stores documents that are viewed important and sensitive to the company.  This system can only be accessed within the company's intranet, and different people have different privileges when they use this document system.
 - Assets:
-  - explanatory_paragraph
-  - explanatory_paragraph ...
+  - The assets we want protect are some sensitive documents to the firm. We want to ensure that people could view/edit/delete documents in this system only if they have the privilege to do so. People who do not have this privilege can never access any document in the system, and people who have privileges to view/edit/delete one document cannot view/edit/delete other documents in the system.
+  - These assets are viewed highly important to the law firm. Disclosure of documents to irrelevant inpeople will lead to leak of critical information and huge costs. Customers will think that their information are not secure with us and refuse to do business with us in the future. On the other hand, if documents are falsely modified, our law firm could potentially break the law and eventually go bankrupt.
 - Threats:
-  - explanatory_paragraph 
-  - explanatory_paragraph ...
+  - There are several kinds of attackers based on their motives. Firstly, attackers may attack our document management system to obtain documents. They may sell these documents to make profits or they may take advantage of information stored in documents themselves. Secondly, attackers may attack because they want to undermine our firm or create trouble for us.
+  - These attackers will pose different types of threats to us. First, they can break into our firm's intranet and hack into our system if the system is public to everyone in the company. Even if the system requires authentication to log in, they may still find ways to break into our authentication system. Second, if attackers are employees of our company, they may have some privileges to log into the document system. In some way, they may alter their privileges, like changing from "view only" to "edit/delete", or extend their privileges of one file to the other. Or, they actually have the privilege to view/edit/delete one document, and they maliciously intend to do something evil.
 - Countermeasures:
-  - explanatory_paragraph
-  - explanatory_paragraph ...
+  - For threats from outside attackers, we have some countermeasures to defend against them. First, we need to set up authentication system and constantly upgrade it for our document management system, so that only authorized person can log into the system. Second, we could narrow the range where this document management system can be accessed, for example, from the whole intranet in the company to some subnet. Thirdly, we could set up some monitoring system for our firm's intranet, so that malicious intent from the outside will be spotted in time. These three countermeasures are specially designed for attackers outside the company.
+  - For threats posed by inside attackers, we also have design several countermeasures. First, we want to make sure that granting of privileges must be done by human and people cannot arbitrarily alter their privileges inside the system. Editing/Deleting document is more significant, so these actions can only be manually approved by those who are legally responsible for these documents . Second, we want to make sure every action within the system is well recorded. If any loss is generated, we could easily investigate into records to find out who is held responsible. And of course, rule and regulations must be established to prevent any unjustified and harmful actions.
 
 ## Problem 3
 - Scenario: Your choice (give a brief explanation)
